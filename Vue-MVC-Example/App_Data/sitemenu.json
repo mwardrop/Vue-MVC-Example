@@ -1,0 +1,13 @@
+﻿[
+    {"header": "Home", "icon": "glyphicon-home", "links" : [
+        {"pagekey": "home:index", "text": "Index", "url": "/Home/Index"},
+        {"pagekey": "home:links", "text": "Links", "url": "/Home/Links"}]},
+    {"header": "Examples", "icon": "glyphicon-eye-open", "links" : [
+        {"pagekey": "examples:index", "text": "Index", "url": "/Examples/index"},
+        {"pagekey": "examples:search", "text": "Search Demo", "url": "/Examples/search"},
+        {"pagekey": "examples:jquerywebpack", "text": "jQuery Webpack", "url": "/Examples/jQueryWebpack"},
+        {"pagekey": "examples:jqueryclassic", "text": "jQuery Classic", "url": "/Examples/jQueryClassic"},
+        {"pagekey": "examples:eventbus", "text": "Event Bus", "url": "/Examples/EventBus"},
+        {"pagekey": "examples:mvcmodelbinding", "text": "MVC Model Binding", "url": "/Examples/MVCModelBinding"}
+    ]}
+]

@@ -1,0 +1,22 @@
+﻿[
+  {
+    "url": "https://vuejs.org/v2/guide/",
+    "label": "Vue Guide",
+    "description": "Your introduction to Vue. Providing getting started examples and use case examples, this is the place you want to go to get started."
+  },
+  {
+    "url": "https://vuejs.org/v2/api/",
+    "label": "Vue API",
+    "description": "Done with the guide? Struggling to implement something? Refer to the Vue API documentation for clarification."
+  },
+  {
+    "url": "https://vuejs.org/v2/examples/",
+    "label": "Official Vue Examples",
+    "description": "Looking for more examples? There is a lot not covered in our example, why not check out the official Vue examples."
+  },
+  {
+    "url": "https://github.com/vuejs/vue-cli",
+    "label": "Vue CLI",
+    "description": "Use the Vue CLI to spool up Vue templates in node."
+  }
+]

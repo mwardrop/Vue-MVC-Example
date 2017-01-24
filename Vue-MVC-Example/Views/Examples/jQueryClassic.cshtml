@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "jQueryClassic";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/jquery")
+
+<h2>jQuery Classic Usage Example</h2>
+
+<div id="jQueryTest"></div>
+
+<div>{{hello}}</div>
+
+<br />
+
+<button class="btn-primary btn-sm" id="jQueryClick">Click Me!</button>
+
+<div style="max-width: 600px;">
+
+    <h3>Integration Caveats</h3>
+
+    <span id="nonBlockingDetails"></span>
+
+</div>
+
+<script>
+
+    $(function () {
+
+        $("#jQueryTest").html("Hello from classic in page jQuery.");
+
+        $("#jQueryClick").click(function () { alert("This page uses both Vue and jQuery."); })
+
+    });
+
+</script>
+
+@section scripts {
+
+    <script>
+
+        $(function () {
+
+            $("#nonBlockingDetails").html("<p>Ideally we would have all our in page jQuery refactored to be in our WebPack bundle as an intermediate stage of coversion.</p><p> This example demonstrates that some of the more complex refactorings where isolating jQuery code will be difficult is still possible by referencing jQuery before the jQuery API calls. </p><p>Using this approach fires a Vue warn error, that scripts should not be in templates but seems to have no adverse effect.</p><p>This approach also requires referencing jQuery in the head of the document instead of at the bottom as a dependancy of Bootstrap, this has the unfortunate effect of blocking browser rendering while jQuery loads.</p><p> In this example we simply include the jQuery reference at the top of the View to simulate moving it to the Head of the layout file.</p>");
+
+        });
+
+    </script>
+
+}

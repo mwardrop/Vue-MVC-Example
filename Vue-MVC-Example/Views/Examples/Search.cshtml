@@ -1,0 +1,94 @@
+﻿@using Newtonsoft.Json;
+@model List<Vue_MVC_Example.Models.Search.Result>
+@{
+    ViewBag.Title = "Examples > Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search Demo</h2>
+
+<p>This example demonstrates a real world solution. In this case we will post some search criteria data to our web server and parse the results for display.</p>
+
+<br />
+
+<button class="cursor-pointer btn-primary btn-lg" v-on:click="showModal = true">Search Again</button>
+
+<modal v-if="showModal" v-on:close="showModal = false" width="470px">
+
+    <h3 slot="header">Search Magic The Gathering Cards</h3>
+
+    <div slot="body">
+
+        <div class="form-group">
+
+            <input type="text" id="criteria" class="form-control" placeholder="Card Name" v-model="criteria" v-on:keyup.enter="search" required />
+
+        </div>
+
+        <div class="form-check form-check-inline">
+
+            <label class="form-check-label">
+
+                <input class="form-check-input" type="radio" name="SearchType" id="SearchTypePost" value="true" v-model="post">
+
+                Form Post Example
+
+            </label>
+
+        </div>
+
+        <div class="form-check form-check-inline">
+
+            <label class="form-check-label">
+
+                <input class="form-check-input" type="radio" name="SearchType" id="SearchTypeAjax" value="false" v-model="post">
+
+                Ajax Request Example
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <div slot="footer" class="text-right">
+
+        <button class="btn-primary btn-sm" v-on:click="search">Search</button>
+
+        <button class="btn-primary btn-sm" v-on:click="showModal = false">Close</button>
+
+    </div>
+
+</modal>
+
+<form action="Search" id="originalForm">
+
+    <input type="hidden" name="criteria" v-model="criteria" />
+
+</form>
+
+<hr />
+
+<div class="list-group" v-for="card in results" v-if="results.length > 0" >
+
+    <span class="list-group-item">
+
+        <h4 class="list-group-item-heading">{{card.name}}</h4>
+
+        <p class="list-group-item-text">{{card.text}}</p>
+
+    </span>
+
+</div>
+
+<div v-if="results.length == 0">
+
+    <h4>No results found!</h4>
+
+</div>
+
+@section serverdata
+{
+    @*Make our MVC Model data available to Vue*@
+    <script> window.serverdata = JSON.parse('@Html.Raw(JsonConvert.SerializeObject(Model.ToArray()))')</script>
+}

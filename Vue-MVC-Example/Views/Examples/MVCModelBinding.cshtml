@@ -1,0 +1,20 @@
+﻿@using Newtonsoft.Json;
+@model Vue_MVC_Example.Models.BindingModel
+@{
+    ViewBag.Title = "MVCModelBinding";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MVC Model Binding</h2>
+<p>This example demonstrates binding model data provided from the server to the Vue client application.</p>
+
+<hr />
+
+<h4>{{serverdata.message}}</h4>
+{{serverdata.guid}}
+
+@section serverdata 
+{
+     @*Make our MVC Model data available to Vue*@
+    <script> window.serverdata = JSON.parse('@Html.Raw(JsonConvert.SerializeObject(Model))')</script>       
+}

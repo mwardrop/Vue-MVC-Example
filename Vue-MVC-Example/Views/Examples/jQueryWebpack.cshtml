@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "jQueryTranspiled";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>jQuery WebPack Usage Example</h2>
+
+<div id="jQueryTest"></div>
+
+<div>{{hello}}</div>
+
+<br />
+
+<button class="btn-primary btn-sm" id="jQueryClick">Click Me!</button>
+
+<div style="max-width: 600px;">
+
+    <h3>Converting classic jQuery to Vue</h3>
+
+    <span>
+        <p>When converting an existing MVC project that heavily levarages jQuery, we would ideally refactor all our jQuery code to be in the same WebPack bundle as our Vue app ( i.e. [page].dist.js ).</p>
+        <p>This should generally be a fairly straight forward process and will allow us to clean our Views up and put all our code logic in a place that is easily convertable when the opportunity arises.</p>
+        <p>If this style of refactoring proves too difficult refer to the jQuery Classic example.</p>
+    </span>
+
+</div>
+
