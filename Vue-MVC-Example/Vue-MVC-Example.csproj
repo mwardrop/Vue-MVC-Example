@@ -199,7 +199,6 @@
     <Content Include="App_Data\sitemenu.json" />
     <Content Include="Components\Tests\Unit\.eslintrc" />
     <Content Include="App_Data\sitelinks.json" />
-    <Content Include="readme.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />

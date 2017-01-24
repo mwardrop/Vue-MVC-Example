@@ -1,5 +1,6 @@
-/packages/*
+/packages
 /Vue-MVC-Example/bin
 /Vue-MVC-Example/node_modules
 /Vue-MVC-Example/coverage
 /Vue-MVC-Example/obj
+/.vs
