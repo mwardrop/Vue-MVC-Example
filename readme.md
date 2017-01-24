@@ -1,9 +1,13 @@
 ASP.NET MVC 5 and Vue Integeration Example
 =================
 
-ASP.NET MVC 5 Project with Vue. Includes build pipeline with Webpack, Babel, Karma, Mocha, Chai, Nightwatch and some other Jazz integrated into Visual Studio 2015
+ASP.NET MVC 5 Project with Vue.
 
-Requirements:
+Includes build pipeline with Webpack, Babel, Karma, Mocha, Chai, Nightwatch and some other Jazz integrated into Visual Studio 2015.
+
+Includes examples for real world search form, MVC Model Binding, jQuery integration (legacy apps), Mixins, Modals and some other Blues.
+
+**Requirements:**
 
 1) Upgrade Visual Studio 2015 Node.Js reference
 
