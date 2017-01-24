@@ -7,12 +7,12 @@ Requirements:
 
 1) Upgrade Visual Studio 2015 Node.Js reference
 
-      (https://ryanhayes.net/synchronize-node-js-install-version-with-visual-studio-2015/)
+      https://ryanhayes.net/synchronize-node-js-install-version-with-visual-studio-2015/
       
 2) Install NPM Task Runner Extension
 
-      (https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner)
+      https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner
 
 3) Install Webpack Task Runner Extension
 
-      (https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner)
+      https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebPackTaskRunner
